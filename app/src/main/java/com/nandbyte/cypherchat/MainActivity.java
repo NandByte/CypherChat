@@ -4,6 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.widget.ViewPager2;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,13 +17,17 @@ import android.os.PersistableBundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     private FirebaseAuth mAuth;
     private Toolbar mToolBar;
 
+    private ViewPager mViewpager;
+    private TabLayout mTabLayout;
+    SectionPagerAdapter mSectionPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
         mToolBar = (Toolbar) findViewById(R.id.main_page_toolbar);
         setSupportActionBar(mToolBar);
         getSupportActionBar().setTitle("CypherChat");
+
+        //tabs
+        mViewpager =  findViewById(R.id.main_pager);
+        mSectionPagerAdapter = new SectionPagerAdapter(getSupportFragmentManager());
+        mViewpager.setAdapter(mSectionPagerAdapter);
+        mTabLayout = (TabLayout) findViewById(R.id.main_tab);
+        mTabLayout.setupWithViewPager(mViewpager);
     }
 
     @Override
