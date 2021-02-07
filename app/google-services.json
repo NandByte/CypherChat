@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "486031571513",
+    "project_id": "cypher-chat-53d4b",
+    "storage_bucket": "cypher-chat-53d4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486031571513:android:8797a431440c31ea8fabe8",
+        "android_client_info": {
+          "package_name": "com.nandbyte.cypherchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486031571513-lqtsf8kug9arp0isjbt244fe0585l3e6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nandbyte.cypherchat",
+            "certificate_hash": "4b39f7afb1ed5dd8d2fe1dcc82dab929ff4dd8be"
+          }
+        },
+        {
+          "client_id": "486031571513-40br4h9id9lfbp2m2trf3gbohn1cjmii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx21hDijyeYbR206qo54LCguwbS5b-dD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486031571513-40br4h9id9lfbp2m2trf3gbohn1cjmii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
