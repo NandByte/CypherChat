@@ -107,7 +107,7 @@ public class MessageAdapter  extends RecyclerView.Adapter<MessageAdapter.Message
         final String message_type = msgDto.getType();
 
 
-        mUserDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(from_user);
+        mUserDatabase = FirebaseDatabase.getInstance("https://cypher-chat-53d4b-default-rtdb.firebaseio.com/").getReference().child("Users").child(from_user);
 
 
         mUserDatabase.addValueEventListener(new ValueEventListener() {
