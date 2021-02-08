@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     tools:context=".RegisterActivity">
 
     <include
@@ -23,19 +24,23 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFF"
         android:hint="@string/display_name"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.059">
+        app:layout_constraintVertical_bias="0.059"
+        app:passwordToggleTint="#FFFFFF">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="100dp"
-            android:layout_marginRight="15dp" />
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#FFFFFF" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -47,17 +52,20 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="8dp"
         android:hint="@string/email"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_display_name"
-        app:layout_constraintVertical_bias="0.022">
+        app:layout_constraintVertical_bias="0.022"
+        app:passwordToggleTint="#FFFFFF">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:backgroundTint="#FFFFFF"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,31 +78,34 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="8dp"
         android:hint="@string/password"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_email"
-        app:layout_constraintVertical_bias="0.067">
+        app:layout_constraintVertical_bias="0.034"
+        app:passwordToggleTint="#FFFFFF">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:backgroundTint="#FFFFFF"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/reg_create_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="104dp"
         android:backgroundTint="@color/colorAccent"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="CREATE ACCOUNT"
-        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_password" />
 
@@ -106,7 +117,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
         android:text="Create a New Account"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"

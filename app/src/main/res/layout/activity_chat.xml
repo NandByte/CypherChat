@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#cccccc"
+    android:background="@color/colorBackground"
     tools:context=".ChatActivity">
 
     <include
         android:id="@+id/chat_app_bar"
-        layout="@layout/app_bar_layout" />
+        layout="@layout/app_bar_layout"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF" />
+
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/message_swipe_layout"
@@ -17,7 +20,8 @@
         android:layout_height="600dp"
         android:layout_above="@id/bottom_bar"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="54dp">
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="0dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/messages_list"
@@ -27,7 +31,6 @@
             android:layout_marginTop="54dp"></androidx.recyclerview.widget.RecyclerView>
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
 
     <LinearLayout
         android:id="@+id/bottom_bar"

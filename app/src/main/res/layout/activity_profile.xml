@@ -52,25 +52,25 @@
 
     <Button
         android:id="@+id/profile_send_req_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_above="@+id/profile_decline_btn"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="12dp"
         android:backgroundTint="@color/colorAccent"
         android:text="SEND FRIEND REQUEST"
-        android:textColor="@android:color/white" />
+        android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/profile_decline_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:backgroundTint="@color/colorAccent"
         android:text="DECLINE FRIEND REQUEST"
-        android:textColor="@android:color/white" />
+        android:textColor="@color/colorPrimaryDark" />
 
 
 </RelativeLayout>
