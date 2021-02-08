@@ -69,7 +69,9 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:backgroundTint="#FFFFFF"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

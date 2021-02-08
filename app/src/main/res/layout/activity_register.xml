@@ -26,6 +26,8 @@
         android:layout_marginBottom="8dp"
         android:backgroundTint="#FFFFFF"
         android:hint="@string/display_name"
+        android:scrollbarThumbHorizontal="@color/white"
+        android:scrollbarThumbVertical="@color/white"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +42,11 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="100dp"
             android:layout_marginRight="15dp"
-            android:backgroundTint="#FFFFFF" />
+            android:backgroundTint="#FFFFFF"
+            android:scrollbarThumbHorizontal="@color/white"
+            android:scrollbarThumbVertical="@color/white"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -52,6 +58,8 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="8dp"
         android:hint="@string/email"
+        android:scrollbarThumbHorizontal="@color/white"
+        android:scrollbarThumbVertical="@color/white"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +74,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:backgroundTint="#FFFFFF"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -78,6 +87,8 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="8dp"
         android:hint="@string/password"
+        android:scrollbarThumbHorizontal="@color/white"
+        android:scrollbarThumbVertical="@color/white"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,7 +103,9 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:backgroundTint="#FFFFFF"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
