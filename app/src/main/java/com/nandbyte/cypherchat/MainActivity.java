@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity
 
         mToolbar = findViewById(R.id.main_page_toolbar);
         setSupportActionBar(mToolbar);
-        getSupportActionBar().setTitle("GIT-Chat");
+        getSupportActionBar().setTitle("CypherChat");
 
         mCurrentUser = mAuth.getCurrentUser();
 

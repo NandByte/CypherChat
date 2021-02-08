@@ -60,9 +60,9 @@ public class ChatsFragment extends Fragment {
 
         mCurrent_user_id = mAuth.getCurrentUser().getUid();
 
-        mChatsDatabase = FirebaseDatabase.getInstance().getReference().child("Chat").child(mCurrent_user_id);
+        mChatsDatabase = FirebaseDatabase.getInstance("https://cypher-chat-53d4b-default-rtdb.firebaseio.com/").getReference().child("Chat").child(mCurrent_user_id);
         mChatsDatabase.keepSynced(true);
-        mUsersDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
+        mUsersDatabase = FirebaseDatabase.getInstance("https://cypher-chat-53d4b-default-rtdb.firebaseio.com/").getReference().child("Users");
         mUsersDatabase.keepSynced(true);
 
         mChatsList.setHasFixedSize(true);

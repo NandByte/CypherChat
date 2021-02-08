@@ -51,14 +51,14 @@ public class UsersActivity extends AppCompatActivity {
 
         String current_uid = mCurrentUser.getUid();
 
-        mUserRef = FirebaseDatabase.getInstance().getReference().child("Users").child(current_uid);
+        mUserRef = FirebaseDatabase.getInstance("https://cypher-chat-53d4b-default-rtdb.firebaseio.com/").getReference().child("Users").child(current_uid);
 
         mToolbar = findViewById(R.id.users_appBar);
         setSupportActionBar(mToolbar);
         getSupportActionBar().setTitle("All Users");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        mUsersDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
+        mUsersDatabase = FirebaseDatabase.getInstance("https://cypher-chat-53d4b-default-rtdb.firebaseio.com/").getReference().child("Users");
 
         mUsersList = findViewById(R.id.users_list);
         mUsersList.setHasFixedSize(true);
