@@ -160,8 +160,6 @@ public class ChatActivity extends AppCompatActivity {
                                 public void onError() {
 
                                     Picasso.with(ChatActivity.this).load(image).placeholder(R.drawable.default_avatar).into(mProfileImage);
-
-
                                 }
                             });
 

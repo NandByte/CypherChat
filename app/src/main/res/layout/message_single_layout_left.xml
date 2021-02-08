@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:text="XY"
+            android:text="Sender"
             android:textColor="#EEEEEE"
             android:visibility="visible"
             tools:visibility="visible" />
@@ -62,10 +62,11 @@
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:text="You"
+            android:textAlignment="textEnd"
             android:textColor="#EEEEEE" />
 
         <TextView
@@ -77,15 +78,17 @@
             android:layout_marginRight="5dp"
             android:background="@color/colorPrimary"
             android:padding="10dp"
+            android:textAlignment="textEnd"
             android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
         <TextView
             android:id="@+id/to_time"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:layout_margin="5dp"
             android:text="12:15"
+            android:textAlignment="textEnd"
             android:textColor="#EEEEEE"
             android:textSize="10sp" />
 

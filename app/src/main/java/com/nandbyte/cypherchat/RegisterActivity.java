@@ -58,7 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
         mRegProgress = new ProgressDialog(this);
 
 
-        mDisplayName = findViewById(R.id.reg_display_name);
+        mDisplayName = findViewById(R.id._reg_display_name);
         mEmail = findViewById(R.id.login_email);
         mPassword = findViewById(R.id.reg_password);
         mCreateBtn = findViewById(R.id.reg_create_btn);
