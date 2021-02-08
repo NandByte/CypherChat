@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/default_avatar" />
+        app:srcCompat="@drawable/cypher_small" />
 
     <TextView
         android:id="@+id/profile_displayName"
