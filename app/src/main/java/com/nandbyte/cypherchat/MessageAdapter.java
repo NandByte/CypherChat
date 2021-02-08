@@ -114,7 +114,7 @@ public class MessageAdapter  extends RecyclerView.Adapter<MessageAdapter.Message
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                mMsgRef = FirebaseDatabase.getInstance().getReference().child("messages");
+                mMsgRef = FirebaseDatabase.getInstance("https://cypher-chat-53d4b-default-rtdb.firebaseio.com/").getReference().child("messages");
 
                 String name = dataSnapshot.child("name").getValue().toString();
                 String image = dataSnapshot.child("thumb_image").getValue().toString();
