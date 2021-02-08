@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">CypherChat</string>
-    <string name="need_a_new_account">NEED A NEW ACCOUNT?</string>
+    <string name="need_a_new_account">Create New Account</string>
     <string name="display_name">Display Name</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
