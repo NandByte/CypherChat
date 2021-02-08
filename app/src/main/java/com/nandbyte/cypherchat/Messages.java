@@ -30,7 +30,7 @@ public class Messages {
     public Messages(String message, String type, long time, boolean seen) {
         this.message = message;
         this.type = type;
-        this.time = time;
+        this.time = System.nanoTime();
         this.seen = seen;
     }
 

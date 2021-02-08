@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
@@ -12,6 +15,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ServerValue;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
@@ -21,7 +25,6 @@ public class MainActivity extends AppCompatActivity
                                                             ChatsFragment.OnFragmentInteractionListerner,
                                                             FriendsFragment.OnFragmentInteractionListener
     {
-
         @Override
     public void onFragmentInteraction() {
         onFragmentInteraction();
@@ -121,22 +124,24 @@ public class MainActivity extends AppCompatActivity
         super.onOptionsItemSelected(item);
 
         if(item.getItemId() == R.id.main_setting_btn){
-
             Intent settings_intent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(settings_intent);
         }
         else if(item.getItemId() == R.id.main_logout_btn){
-
-            FirebaseAuth.getInstance().signOut();
-            sendToStart();
+            FirebaseAuth.getInstance().getCurrentUser().delete().addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    if(task.isSuccessful()){
+                        FirebaseAuth.getInstance().signOut();
+                        sendToStart();
+                    }
+                }
+            });
         }
         else if(item.getItemId() == R.id.main_all_btn){
-
             Intent users_intent = new Intent(MainActivity.this, UsersActivity.class);
             startActivity(users_intent);
         }
-
-
         return true;
     }
 
