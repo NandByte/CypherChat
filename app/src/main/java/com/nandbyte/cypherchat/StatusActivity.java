@@ -43,7 +43,7 @@ public class StatusActivity extends AppCompatActivity {
         mCurrentUser = mAuth.getCurrentUser();
         String current_uid = mCurrentUser.getUid();
 
-        mStatusDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(current_uid);
+        mStatusDatabase = FirebaseDatabase.getInstance("https://cypher-chat-53d4b-default-rtdb.firebaseio.com/").getReference().child("Users").child(current_uid);
 
         mToolbar =findViewById(R.id.status_appBar);
         setSupportActionBar(mToolbar);

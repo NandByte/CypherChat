@@ -61,11 +61,11 @@ public class ProfileActivity extends AppCompatActivity {
 
         final String user_id = getIntent().getStringExtra("user_id");
 
-        mRootRef = FirebaseDatabase.getInstance().getReference();
+        mRootRef = FirebaseDatabase.getInstance("https://cypher-chat-53d4b-default-rtdb.firebaseio.com/").getReference();
 
-        mUsersDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(user_id);
-        mFriendReqDatabase = FirebaseDatabase.getInstance().getReference().child("Friend_req");
-        mFriendDatabase = FirebaseDatabase.getInstance().getReference().child("Friends");
+        mUsersDatabase = FirebaseDatabase.getInstance("https://cypher-chat-53d4b-default-rtdb.firebaseio.com/").getReference().child("Users").child(user_id);
+        mFriendReqDatabase = FirebaseDatabase.getInstance("https://cypher-chat-53d4b-default-rtdb.firebaseio.com/").getReference().child("Friend_req");
+        mFriendDatabase = FirebaseDatabase.getInstance("https://cypher-chat-53d4b-default-rtdb.firebaseio.com/").getReference().child("Friends");
         mNotificationDatabase = FirebaseDatabase.getInstance().getReference().child("notifications");
         mCurrentUser = FirebaseAuth.getInstance().getCurrentUser();
 
@@ -135,8 +135,6 @@ public class ProfileActivity extends AppCompatActivity {
 
                             }
 
-                            mProgressDialog.dismiss();
-
                         }
                         else{
 
@@ -160,10 +158,8 @@ public class ProfileActivity extends AppCompatActivity {
                                 }
                             });
 
-                            mProgressDialog.dismiss();
-
                         }
-
+                        mProgressDialog.dismiss();
 
 
                     }
