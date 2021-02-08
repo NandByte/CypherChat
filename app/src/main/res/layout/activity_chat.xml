@@ -15,6 +15,7 @@
         android:id="@+id/message_swipe_layout"
         android:layout_width="match_parent"
         android:layout_height="600dp"
+        android:layout_above="@id/bottom_bar"
         android:layout_alignParentTop="true"
         android:layout_marginTop="54dp">
 
@@ -28,8 +29,8 @@
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
-
     <LinearLayout
+        android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -45,9 +46,9 @@
             android:layout_weight="1"
             android:alpha="0.5"
             android:background="@color/common_google_signin_btn_text_dark_default"
+            android:clickable="true"
             android:paddingLeft="10dp"
-            android:src="@drawable/add"
-            android:clickable="true"/>
+            android:src="@drawable/add" />
 
         <EditText
             android:id="@+id/chat_send_text"
@@ -67,9 +68,9 @@
             android:layout_weight="1"
             android:alpha="0.5"
             android:background="@color/common_google_signin_btn_text_dark_default"
+            android:clickable="true"
             android:paddingLeft="10dp"
-            android:src="@drawable/send"
-            android:clickable="true"/>
+            android:src="@drawable/send" />
     </LinearLayout>
 
 
