@@ -206,7 +206,7 @@ public class FriendsFragment extends Fragment {
         public void setUserImage(String thumb_image, Context ctx){
 
             CircleImageView userImageView =  mView.findViewById(R.id.user_single_image);
-            Picasso.with(ctx).load(thumb_image).placeholder(R.drawable.default_avatar).into(userImageView);
+            Picasso.with(ctx).load(thumb_image).placeholder(R.drawable.cypher_small).into(userImageView);
 
         }
 

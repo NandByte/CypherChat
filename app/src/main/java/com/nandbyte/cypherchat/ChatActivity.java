@@ -149,7 +149,7 @@ public class ChatActivity extends AppCompatActivity {
 
                 if(!image.equals("default")){
 
-                    Picasso.with(ChatActivity.this).load(image).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.default_avatar)
+                    Picasso.with(ChatActivity.this).load(image).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.cypher_small)
                             .into(mProfileImage, new Callback() {
                                 @Override
                                 public void onSuccess() {
@@ -159,7 +159,7 @@ public class ChatActivity extends AppCompatActivity {
                                 @Override
                                 public void onError() {
 
-                                    Picasso.with(ChatActivity.this).load(image).placeholder(R.drawable.default_avatar).into(mProfileImage);
+                                    Picasso.with(ChatActivity.this).load(image).placeholder(R.drawable.cypher_small).into(mProfileImage);
                                 }
                             });
 

@@ -102,7 +102,7 @@ public class ProfileActivity extends AppCompatActivity {
                 mProfileName.setText(display_name);
                 mProfileStatus.setText(status);
 
-                Picasso.with(ProfileActivity.this).load(image).placeholder(R.drawable.default_avatar).into(mProfileImage);
+                Picasso.with(ProfileActivity.this).load(image).placeholder(R.drawable.cypher_small).into(mProfileImage);
 
 
                 // ------------FRIENDS LIST / REQUEST FEATURE-----------------
