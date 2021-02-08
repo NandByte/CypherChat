@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso;
 
 import androidx.annotation.NonNull;
 
-public class GITChat extends Application {
+public class CypherChat extends Application {
 
     private DatabaseReference mUserDatabase;
     private FirebaseAuth mAuth;

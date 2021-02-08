@@ -127,7 +127,6 @@ public class ChatActivity extends AppCompatActivity {
 
         mMessagesList.setHasFixedSize(true);
         mMessagesList.setLayoutManager(mLinearLayout);
-
         mMessagesList.setAdapter(mAdapter);
 
         //------- IMAGE STORAGE ---------
