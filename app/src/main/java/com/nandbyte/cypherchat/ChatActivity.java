@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -57,8 +58,8 @@ public class ChatActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private String mCurrentUserId;
 
-    private ImageButton mChatAddBtn;
-    private ImageButton mChatSendBtn;
+    private Button mChatAddBtn;
+    private Button mChatSendBtn;
     private EditText mChatMessageView;
 
     private RecyclerView mMessagesList;
@@ -115,8 +116,8 @@ public class ChatActivity extends AppCompatActivity {
         mLastSeenView =  findViewById(R.id.custom_bar_seen);
         mProfileImage =  findViewById(R.id.custom_bar_image);
 
-        mChatAddBtn =  findViewById(R.id.chat_add_btn);
-        mChatSendBtn =  findViewById(R.id.chat_send_btn);
+        mChatAddBtn =  findViewById(R.id.send_img);
+        mChatSendBtn =  findViewById(R.id.send_msg);
         mChatMessageView =  findViewById(R.id.chat_send_text);
 
         mAdapter = new MessageAdapter(messagesList);

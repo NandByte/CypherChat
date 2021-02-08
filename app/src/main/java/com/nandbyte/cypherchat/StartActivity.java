@@ -51,12 +51,10 @@ public class StartActivity extends AppCompatActivity {
         mRegBtn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent regIntent = new Intent(StartActivity.this,RegisterActivity.class);
                 startActivity(regIntent);
             }
         });
-
         mLoginBtn = findViewById(R.id.start_login_btn);
 
 //        mLoginBtn.setOnClickListener(new OnClickListener() {
@@ -67,6 +65,8 @@ public class StartActivity extends AppCompatActivity {
 //                startActivity(loginIntent);
 //            }
 //        });
+
+
         mLoginBtn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {

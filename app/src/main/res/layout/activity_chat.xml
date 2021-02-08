@@ -32,49 +32,55 @@
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
-        android:background="@color/common_google_signin_btn_text_dark_default"
-        android:orientation="horizontal"
-        android:weightSum="10">
-
-        <ImageButton
-            android:id="@+id/chat_add_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:alpha="0.5"
-            android:background="@color/common_google_signin_btn_text_dark_default"
-            android:clickable="true"
-            android:paddingLeft="10dp"
-            android:src="@drawable/add" />
+        android:background="@color/design_default_color_primary"
+        android:backgroundTint="@color/colorPrimary"
+        android:foregroundTint="@color/colorPrimary">
 
         <EditText
             android:id="@+id/chat_send_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="8"
+            android:layout_width="228dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="center_horizontal"
             android:hint="Enter Message"
             android:paddingLeft="10dp"
             android:paddingTop="16dp"
             android:paddingRight="10dp"
-            android:paddingBottom="12dp" />
+            android:paddingBottom="12dp"
+            android:textColor="@color/white"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/send_msg"
+            app:layout_constraintStart_toEndOf="@+id/send_img"
+            tools:layout_editor_absoluteY="-3dp" />
 
-        <ImageButton
-            android:id="@+id/chat_send_btn"
+        <Button
+            android:id="@+id/send_img"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:text="+"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="-2dp" />
+
+        <Button
+            android:id="@+id/send_msg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:alpha="0.5"
-            android:background="@color/common_google_signin_btn_text_dark_default"
-            android:clickable="true"
-            android:paddingLeft="10dp"
-            android:src="@drawable/send" />
-    </LinearLayout>
+            android:height="25dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Send"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </RelativeLayout>

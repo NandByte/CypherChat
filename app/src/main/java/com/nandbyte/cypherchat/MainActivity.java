@@ -81,12 +81,10 @@ public class MainActivity extends AppCompatActivity
     protected void onStart() {
         super.onStart();
 
-        if (mCurrentUser == null){
-
+        if(mAuth.getCurrentUser().getUid()== null){
             sendToStart();
         }
         else {
-
             mUserRef.child("online").setValue("true");
         }
     }
@@ -97,7 +95,6 @@ public class MainActivity extends AppCompatActivity
 
 
         if(mCurrentUser != null){
-
             mUserRef.child("online").setValue(ServerValue.TIMESTAMP);
         }
 
