@@ -100,7 +100,7 @@ public class SettingsActivity extends AppCompatActivity {
 
                 if(!image.equals("default")){
 
-                    Picasso.with(SettingsActivity.this).load(image).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.default_avatar)
+                    Picasso.with(SettingsActivity.this).load(image).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.cypher_small)
                             .into(mDisplayImage, new Callback() {
                                 @Override
                                 public void onSuccess() {
@@ -110,7 +110,7 @@ public class SettingsActivity extends AppCompatActivity {
                                 @Override
                                 public void onError() {
 
-                                    Picasso.with(SettingsActivity.this).load(image).placeholder(R.drawable.default_avatar).into(mDisplayImage);
+                                    Picasso.with(SettingsActivity.this).load(image).placeholder(R.drawable.cypher_small).into(mDisplayImage);
 
 
                                 }
