@@ -13,7 +13,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="10dp"
-        android:src="@drawable/default_avatar" />
+        android:src="@drawable/cypher_logo" />
 
     <TextView
         android:id="@+id/custom_bar_title"
